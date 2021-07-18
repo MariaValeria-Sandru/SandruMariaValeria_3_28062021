@@ -91,7 +91,7 @@
     .links__restaurants {
       flex-direction: column;
       height: $img-size;
-      figure {
+      img {
         width: 100%;
         height: 100%;
         border-radius: 1rem 1rem 0 0;
@@ -104,7 +104,7 @@
     }
   }
 }
-@include mobile {
+@include small {
   .management{
     h2 {
       text-align: center;
@@ -128,7 +128,7 @@
     }
   }
 }
-@include tablet {
+@include medium {
   .management {
     &__nav {
       ol {
@@ -153,7 +153,7 @@
     }
   }
 }
-@include mini-pc {
+@include large {
   .management {
     &__nav {
       ol {
@@ -168,7 +168,7 @@
     }
   }
 }
-@include pc {
+@include extra-large{
   max-width: 1200px;
   margin: 0 auto;
   .management {
