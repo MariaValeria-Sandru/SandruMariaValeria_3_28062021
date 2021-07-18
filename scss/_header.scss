@@ -1,0 +1,20 @@
+.title{
+  margin: auto;
+  h1{
+    text-align:center ;
+
+  }
+  &--restaurant{
+    position: relative;
+    .fas {
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+      font-size: 1.3rem;
+    }
+    @include pc{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}

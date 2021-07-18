@@ -1,0 +1,33 @@
+.btn {
+    background: linear-gradient(to left top,$color-purple,$color-pink );
+    color: $color-white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2rem;
+    @include shadow;
+    &:hover {
+      background: linear-gradient(
+        to left top,
+        lighten($color-purple, 5%),
+        lighten($color-pink, 5%)
+      );
+      box-shadow: 0.5rem 0.5rem 1rem 0 #7e7e7e;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+  /*
+  .btn {
+    background: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
+    background: linear-gradient(to left top, #9356dc, #ff79da);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2rem;
+    -webkit-box-shadow: 0.25rem 0.25rem 1rem -0.5rem #7e7e7e;
+    box-shadow: 0.25rem 0.25rem 1rem -0.5rem #7e7e7e;
+}*/
