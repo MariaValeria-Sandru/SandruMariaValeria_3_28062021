@@ -1,6 +1,6 @@
 .home__menu {
   .fig__restaurants {
-    @include img;
+    @include img-ratio;
     height: $img-size;
   }
   .restaurants__article {
