@@ -77,15 +77,7 @@
             }
           }
         }
-        &__1 {
-          @include start(1);
-        }
-        &__2 {
-          @include start(3);
-        }
-        &__3 {
-          @include start(5);
-        }
+       
       }
       &__footer {
         text-align: center;
