@@ -509,7 +509,7 @@ button {
   }
 }
 
-.home nav .homeposition__form {
+.home .nav .homeposition__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +523,7 @@ button {
   height: 3rem;
 }
 
-.home nav .homeposition__form__input {
+.home .nav .homeposition__form__input {
   background-color: #eaeaea;
   border: none;
   font-weight: bold;
@@ -532,44 +532,44 @@ button {
   margin: 0 1rem;
 }
 
-.home nav .homeposition__form__input:focus {
+.home .nav .homeposition__form__input:focus {
   outline: none;
 }
 
-.home nav .homeposition__book {
+.home .nav .homeposition__book {
   padding: 2rem 0 3rem;
   background-color: #f6f6f6;
   text-align: center;
 }
 
-.home nav .homeposition__book h2 {
+.home .nav .homeposition__book h2 {
   font-size: 1.5rem;
   margin: 0 3rem 1rem;
 }
 
-.home nav .homeposition__book p {
+.home .nav .homeposition__book p {
   font-weight: 400;
   margin: 0 1rem;
 }
 
-.home nav .homeposition__book .btn {
+.home .nav .homeposition__book .btn {
   margin: 2rem auto 0;
   padding: 1rem;
 }
 
-.home nav .management {
+.home .nav .management {
   padding: 3rem 1rem 1rem;
 }
 
-.home nav .management__nav {
+.home .nav .management__nav {
   padding-left: 0.5rem;
 }
 
-.home nav .management__nav ol {
+.home .nav .management__nav ol {
   counter-reset: list;
 }
 
-.home nav .management__nav ol a {
+.home .nav .management__nav ol a {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,13 +586,13 @@ button {
           box-shadow: 0.25rem 0.25rem 1rem -0.5rem #7e7e7e;
 }
 
-.home nav .management__nav ol a i {
+.home .nav .management__nav ol a i {
   color: #7e7e7e;
   margin: 0 1.25rem 0 0.75rem;
   font-size: 1.2rem;
 }
 
-.home nav .management__nav ol a:before {
+.home .nav .management__nav ol a:before {
   position: absolute;
   counter-increment: list;
   background-color: #9356dc;
@@ -604,11 +604,11 @@ button {
   left: -0.8rem;
 }
 
-.home nav .management__nav ol a:hover, .home nav .management__nav ol a:active {
+.home .nav .management__nav ol a:hover, .home .nav .management__nav ol a:active {
   background-color: #f5edff;
 }
 
-.home nav .management__nav ol a:hover i, .home nav .management__nav ol a:active i {
+.home .nav .management__nav ol a:hover i, .home .nav .management__nav ol a:active i {
   color: #9356dc;
 }
 
@@ -629,7 +629,7 @@ button {
   height: 15rem;
 }
 
-.home .restaurants__all .links__restaurants figure__img {
+.home .restaurants__all .links__restaurants figure .restaurants__img {
   width: 100%;
   display: block;
   overflow: hidden;
@@ -640,7 +640,7 @@ button {
   border-radius: 1rem 1rem 0 0;
 }
 
-.home .restaurants__all .links__restaurants figure__img img {
+.home .restaurants__all .links__restaurants figure .restaurants__img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -649,17 +649,17 @@ button {
           transform: translate(-50%, -50%);
 }
 
-.home .restaurants__all .heart {
+.home .restaurants__all .links__restaurants .heart {
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;
 }
 
 @media screen and (max-width: 576px) {
-  .home .management h2 {
+  .home .restaurants .management h2 {
     text-align: center;
   }
-  .home .restaurants__grid {
+  .home .restaurants .restaurants__grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -667,17 +667,17 @@ button {
     gap: 1rem;
     padding: 1rem 0;
   }
-  .home .restaurants__grid .cards {
+  .home .restaurants .restaurants__grid .cards {
     margin: 0;
   }
-  .home .restaurants header h2 {
+  .home .restaurants .restaurants header h2 {
     margin-bottom: 1rem;
     text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .home .management__nav ol {
+  .home .restaurants .management__nav ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -685,49 +685,49 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .home .management__nav ol li {
+  .home .restaurants .management__nav ol li {
     margin: 0 1rem;
   }
-  .home .management__nav ol li a {
+  .home .restaurants .management__nav ol li a {
     padding: 1rem;
   }
-  .home .management__nav ol li a i {
+  .home .restaurants .management__nav ol li a i {
     margin: 0 0.75rem;
   }
-  .home .restaurants {
+  .home .restaurants .restaurants {
     padding: 3rem 2rem 2rem;
   }
-  .home .restaurants__grid {
+  .home .restaurants .restaurants__grid {
     gap: 2rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .home .management__nav ol {
+  .home .restaurants .management__nav ol {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .home .restaurants {
+  .home .restaurants .restaurants {
     padding: 3rem;
   }
-  .home .restaurants__grid {
+  .home .restaurants .restaurants__grid {
     gap: 3rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .home {
+  .home .restaurants {
     max-width: 1200px;
     margin: 0 auto;
   }
-  .home .management {
+  .home .restaurants .management {
     border-left: 2px solid #f6f6f6;
     border-right: 2px solid #f6f6f6;
   }
-  .home .restaurants {
+  .home .restaurants .restaurants {
     padding: 4rem;
   }
-  .home .restaurants__grid {
+  .home .restaurants .restaurants__grid {
     gap: 4rem;
   }
 }
