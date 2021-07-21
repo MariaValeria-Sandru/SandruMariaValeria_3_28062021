@@ -1,5 +1,7 @@
 @import"_media-queries.scss";
 @import"_mixins.scss";
+@import"_restaurants.scss";
+@import"_base.scss";
 .home{
   .nav{
     .homeposition{
@@ -43,9 +45,7 @@
       }
     }
     .management {
-
       padding: 3rem 1rem 1rem;
-
       &__nav {
         padding-left: 0.5rem;
         ol {
@@ -68,6 +68,7 @@
             &:before {
               position: absolute;
               counter-increment: list;
+              content: counter(list);
               background-color: $color-purple;
               color: $color-white;
               text-align: center;
@@ -94,6 +95,7 @@
     padding: 3rem 1rem 2rem;
     &__all {
       position: relative;
+      
         .links__restaurants {
           flex-direction: column;
           height: $img-size;
@@ -101,8 +103,7 @@
             .restaurants{
               &__img {
                 @include img-ratio;
-                width: 100%;
-                height: 100%;
+               
                 border-radius: 1rem 1rem 0 0;
               }
             }
