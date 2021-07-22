@@ -25,12 +25,12 @@ h2{
 .load{
   display: flex;
   justify-content: space-evenly;
-  width:  4rem;
+  width:  12rem;
   height: 5rem;
   &__bar{
       background-color:$color-white;
       height: 100%;
-      width: 2rem;
+      width: 1rem;
       animation: load 1s backwards infinite alternate ease-in-out ;
      &:nth-child(1) {
       background: $color-purple;

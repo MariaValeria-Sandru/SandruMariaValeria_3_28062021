@@ -17,12 +17,9 @@
     outline: none;
     .fas {
       opacity: 1;
-      background: linear-gradient(
-        to bottom left,
-        $color-purple,
-        $color-pink
-      );
-      
+      background: linear-gradient(to bottom left,$color-purple,$color-pink);
+      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: 1s;
     }
