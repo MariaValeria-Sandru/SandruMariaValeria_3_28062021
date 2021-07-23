@@ -1,11 +1,10 @@
-.title{
-  margin: auto;
-  h1{
-    text-align:center ;
+.title {
+  margin: 1rem 0 0.5rem 0;
+  h1 {
     font-family: "shrikhand";
-
+    text-align: center;
   }
-  &--restaurant{
+  &--restaurant {
     position: relative;
     .fas {
       position: absolute;
@@ -13,7 +12,7 @@
       left: 1.5rem;
       font-size: 1.3rem;
     }
-    @include extra-large{
+    @include media(xl) {
       max-width: 1200px;
       margin: 0 auto;
     }

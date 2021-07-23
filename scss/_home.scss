@@ -1,17 +1,12 @@
-@import"_animation.scss";
-@import"_mixins.scss";
-
-.home{
-  .nav{
-    .homeposition{
-
+.page {
+  .nav {
+    .homepage {
       &__form {
         display: flex;
         background-color: $form-bg;
         justify-content: center;
         align-items: center;
         height: 3rem;
-
         &__input {
           background-color: $form-bg;
           border: none;
@@ -21,11 +16,10 @@
           margin: 0 1rem;
           &:focus {
             outline: none;
-            
           }
         }
       }
-      &__book {
+      &__explore {
         padding: 2rem 0 3rem;
         background-color: $base-bg;
         text-align: center;
@@ -43,7 +37,7 @@
         }
       }
     }
-    .management {
+    .operation {
       padding: 3rem 1rem 1rem;
       &__nav {
         padding-left: 0.5rem;
@@ -88,109 +82,102 @@
       }
     }
   }
-
   .restaurants {
     background-color: $base-bg;
-   
     padding: 3rem 1rem 2rem;
-    &__all {
+    &__core{
       position: relative;
-      
-        .links__restaurants {
-          flex-direction: column;
-          height: $img-size;
-          figure{
-                @include img-ratio;
-                border-radius: 1rem 1rem 0 0;
-          } 
-        }
-        .heart {
-          
-           position: absolute;
-          bottom: 1rem;
-          right: 1.5rem;
-        
-        }
-    }
-  }
-      @include small {   
-        .management{
-          h2 {
-          text-align: center;
-          }
-        }
-        .restaurants__grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-          padding: 1rem 0;
-          .cards {
-            margin: 0;
-          }
-        }
-        .restaurants {
-          header {
-            h2 {
-            margin-bottom: 1rem;
-            text-align: center;
-            }
-          }
+      .links__restaurants {
+        flex-direction: column;
+        height: $img-size;
+        figure {
+          @include img-ratio;
+          border-radius: 1rem 1rem 0 0;
         }
       }
-      @include medium {
-        .management {
-          &__nav {
-            ol {
-              display: flex;
-              justify-content: center;
-              li {
-                margin: 0 1rem;
-                a {
-                padding: 1rem;
-                  i {
-                    margin: 0 0.75rem;
-                  }
-                }
+      .heart {
+        position: absolute;
+        bottom: 1rem;
+        right: 1.5rem;
+      }
+    }
+  }
+  @include media(sm) {
+    .operation {
+      h2 {
+        text-align: center;
+      }
+    }
+    .resturants__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 1rem 0;
+      .cards {
+        margin: 0;
+      }
+    }
+    .restaurants {
+      header {
+        h2 {
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @include media(md) {
+    .operation {
+      &__nav {
+        ol {
+          display: flex;
+          justify-content: center;
+          li {
+            margin: 0 1rem;
+            a {
+              padding: 1rem;
+              i {
+                margin: 0 0.75rem;
               }
             }
           }
         }
-        .restaurants {
-          padding: 3rem 2rem 2rem;
-          &__grid {
-            gap: 2rem;
-          }
+      }
+    }
+    .restaurants {
+      padding: 3rem 2rem 2rem;
+      &__grid {
+        gap: 2rem;
+      }
+    }
+  }
+  @include media(lg) {
+    .operation {
+      &__nav {
+        ol {
+          justify-content: space-around;
         }
       }
-      @include large {
-        .management {
-          &__nav {
-            ol {
-              justify-content: space-around;
-            }
-          }
-        }
-        .restaurants {
-          padding: 3rem;
-          &__grid {
-            gap: 3rem;
-          }
-        }
+    }
+    .restaurants {
+      padding: 3rem;
+      &__grid {
+        gap: 3rem;
       }
-
-      @include extra-large{
-        max-width: 1200px;
-        margin: 0 auto;
-        .management {
-          border-left: 2px solid $base-bg;
-          border-right: 2px solid $base-bg;
-        }
-        .restaurants {
-          padding: 4rem;
-          &__grid {
-            gap: 4rem;
-          }
-        }
+    }
+  }
+  @include media(xl) {
+    max-width: 1200px;
+    margin: 0 auto;
+    .operation {
+      border-left: 2px solid $base-bg;
+      border-right: 2px solid $base-bg;
+    }
+    .restaurants {
+      padding: 4rem;
+      &__grid {
+        gap: 4rem;
       }
+    }
+  }
 }
-
