@@ -1,3 +1,4 @@
+@import "_variables.scss";
 .page {
   .nav {
     .homepage {
@@ -87,14 +88,15 @@
     padding: 3rem 1rem 2rem;
     &__core{
       position: relative;
-      .links__restaurants {
+       .links__restaurants {
+        height: 100%;
         flex-direction: column;
         height: $img-size;
         figure {
           @include img-ratio;
           border-radius: 1rem 1rem 0 0;
         }
-      }
+      } 
       .heart {
         position: absolute;
         bottom: 1rem;
@@ -174,8 +176,10 @@
       border-right: 2px solid $base-bg;
     }
     .restaurants {
+
       padding: 4rem;
       &__grid {
+        width: 100%;
         gap: 4rem;
       }
     }
