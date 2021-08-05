@@ -221,7 +221,7 @@ img {
   .page .operation h2 {
     text-align: center;
   }
-  .page .resturants__grid {
+  .page .restaurants__grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -229,7 +229,7 @@ img {
     gap: 1rem;
     padding: 1rem 0;
   }
-  .page .resturants__grid .cards {
+  .page .restaurants__grid .cards {
     margin: 0;
   }
   .page .restaurants header h2 {
