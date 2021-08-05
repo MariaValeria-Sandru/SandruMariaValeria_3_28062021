@@ -1,3 +1,4 @@
+@import"_check.scss";
 @keyframes cards {
   0% {
     transform: translateY(1rem);
@@ -11,5 +12,4 @@
     transform: translateY(0);
     opacity: 1;
   }
- 
 }
